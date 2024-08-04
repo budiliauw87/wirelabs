@@ -115,7 +115,9 @@
                 <ul class="menu px-4 py-0">
                     <li>
                         <details id="disclosure-docs">
-                            <summary class="group"><span><svg width="18" height="18" viewBox="0 0 48 48"
+                            <summary class="group">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 48 48"
                                         class="text-orange-400 h-5 w-5" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 7H16C20.4183 7 24 10.5817 24 15V42C24 38.6863 21.3137 36 18 36H5V7Z"
@@ -145,7 +147,8 @@
                     <li>
                         <a class="group" href="#">
                             <span>
-                                <svg class="h-5 w-5 text-fuchsia-400" width="18" height="18" viewBox="0 0 48 48"
+                                <svg class="h-5 w-5 text-fuchsia-400" width="18" height="18"
+                                    viewBox="0 0 48 48"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M20.1005 8.1005L24.3431 12.3431M30 4V10V4ZM39.8995 8.1005L35.6569 12.3431L39.8995 8.1005ZM44 18H38H44ZM39.8995 27.8995L35.6569 23.6569L39.8995 27.8995ZM30 32V26V32ZM20.1005 27.8995L24.3431 23.6569L20.1005 27.8995ZM16 18H22H16Z"
@@ -155,13 +158,13 @@
                                         stroke-linecap="butt" stroke-linejoin="bevel"></path>
                                 </svg>
                             </span>
-                            <span>Feature Generator</span>
+                            <span>Feature </span>
                         </a>
                     </li>
                     <li>
                         <a class="group" href="#">
                             <span>
-                                <svg class="h-5 w-5 text-base-400" stroke="currentColor" fill="currentColor"
+                                <svg class="h-5 w-5 text-primary"  fill="currentColor"
                                     stroke-width="0" viewBox="0 0 32 32" height="1em" width="1em"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -174,7 +177,7 @@
                     </li>
                     <li></li>
                     <li> <a class="group    from-primary to-primary/0 hover:to-primary/10 from-[-200%] to-60% [background-image:linear-gradient(-35deg,var(--tw-gradient-stops))]"
-                            href="/store/"><span class=" group-hover:text-primary transition-colors"><svg
+                            href="#"><span class=" group-hover:text-primary transition-colors"><svg
                                     class="h-5 w-5" width="18" height="18" viewBox="0 0 48 48"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M40.0391 22V42H8.03906V22" stroke="currentColor" stroke-width="4"
