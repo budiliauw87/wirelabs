@@ -17,16 +17,17 @@
 
 <body>
 
-    <div class="bg-base-100 drawer lg:drawer-open">
+    <div class="bg-base-200 drawer lg:drawer-open">
 
         <input id="drawer" type="checkbox" class="drawer-toggle">
-        <!-- main content-->
+        <!-- drawer content-->
         <div class="drawer-content">
-            <div class="navbar bg-base-100">
+            <!--navbar-->
+            <div class="navbar bg-primary text-primary-content">
                 <div class="flex-none">
                     <span class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
                         data-tip="Menu"><label aria-label="Open menu" for="drawer"
-                            class="btn btn-square btn-ghost drawer-button lg:hidden "><svg width="20" height="20"
+                            class="btn btn-square btn-ghost drawer-button "><svg width="20" height="20"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 class="inline-block h-5 w-5 stroke-current md:h-6 md:w-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -36,19 +37,7 @@
                 </div>
                 <div class="flex-1 ">
                     <a class="btn btn-ghost text-xl lg:hidden">WireLabs</a>
-                    <ul class="menu menu-horizontal px-1 lg:hidden">
-                        <li>
-                            <details>
-                                <summary>Post</summary>
-                                <ul class="bg-base-100 rounded-t-none p-2 w-40">
-                                    <li><a>Link 1</a></li>
-                                    <li><a>Link 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Feature</a></li>
-                        <li><a>About</a></li>
-                    </ul>
+
                 </div>
                 <div class="flex-none">
                     <label class="swap swap-rotate mx-2">
@@ -78,7 +67,7 @@
                             </div>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-primary text-primary-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li>
                                 <a class="justify-between">
                                     Profile
@@ -92,6 +81,23 @@
 
                 </div>
             </div>
+
+            <!-- content-->
+            <main class="bg-base-200 neutral-content p-2">
+                <div class="hero ">
+                    <div class="hero-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="text-5xl font-bold">Hello there</h1>
+                        <p class="py-6">
+                          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                          quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+            </main>
+
         </div>
 
         <!-- sidebar-->
