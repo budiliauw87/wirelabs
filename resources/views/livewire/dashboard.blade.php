@@ -1,72 +1,80 @@
-<div class="container p-5 w-full md:w-auto">
-    <div class="stats w-full shadow my-6">
-        <div class="stat">
-            <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block h-8 w-8 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
+<div class="container mx-auto p-5 w-full">
+    <div class="grid grid-flow-row-dense grid-cols-3 gap-4">
+        <div class="col-span-3 lg:col-span-1 card bg-accent text-accent-content shadow ">
+            <div class="card-body">
+                <h2 class="card-title">Widget title!</h2>
+                <p>If a dog chews shoes whose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                </div>
             </div>
-            <div class="stat-title">Downloads</div>
-            <div class="stat-value">31K</div>
-            <div class="stat-desc">Jan 1st - Feb 1st</div>
+        </div>
+        <div class="card bg-base-100 shadow">
+            <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-green-500 text-primary-content">
+            <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
         </div>
 
-        <div class="stat">
-            <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block h-8 w-8 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
-                    </path>
-                </svg>
+        <div class="col-span-3 card bg-base-100 text-base-content shadow-md">
+            <div class="card-body">
+                <h2 class="card-title">Card Secondary!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn">Buy Now</button>
+                </div>
             </div>
-            <div class="stat-title">New Users</div>
-            <div class="stat-value">4,200</div>
-            <div class="stat-desc">↗︎ 400 (22%)</div>
         </div>
-
-        <div class="stat">
-            <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    class="inline-block h-8 w-8 stroke-current">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-                </svg>
+        <div class="col-span-3 card bg-base-100 overflow-x-auto">
+            <div class="card-body">
+                <h2 class="card-title">Example Table </h2>
+            <table class="table table-zebra mt-5">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th>Job</th>
+                  <th>Favorite Color</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>Quality Control Specialist</td>
+                  <td>Blue</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>2</th>
+                  <td>Hart Hagerty</td>
+                  <td>Desktop Support Technician</td>
+                  <td>Purple</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>3</th>
+                  <td>Brice Swyre</td>
+                  <td>Tax Accountant</td>
+                  <td>Red</td>
+                </tr>
+              </tbody>
+            </table>
             </div>
-            <div class="stat-title">New Registers</div>
-            <div class="stat-value">1,200</div>
-            <div class="stat-desc">↘︎ 90 (14%)</div>
-        </div>
-    </div>
-    <hr>
-    <!--- typography-->
-    <article class="prose my-2 min-w-full md:w-auto min-w-fit ">
-        <h1>Garlic bread with cheese: What the science tells us</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <p>
-          For years parents have espoused the health benefits of eating garlic bread with cheese to their
-          children, with the food earning such an iconic status in our culture that kids will often dress
-          up as warm, cheesy loaf for Halloween.
-        </p>
-        <blockquote><p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p></blockquote>
-        <p>
-          But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-          springing up around the country.
-        </p>
-        <hr>
-        <h1>Example Skeleton </h1>
-        <div class="flex w-52 flex-col gap-4">
-            <div class="skeleton h-32 w-full"></div>
-            <div class="skeleton h-4 w-28"></div>
-            <div class="skeleton h-4 w-full"></div>
-            <div class="skeleton h-4 w-full"></div>
           </div>
-      </article>
-     <hr>
-
+    </div>
 </div>
