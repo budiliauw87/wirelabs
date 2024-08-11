@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
@@ -15,23 +13,22 @@
 <body>
     <div class="bg-base-200 drawer lg:drawer-open">
         <input id="drawer" type="checkbox" class="drawer-toggle">
-
-        {{-- drawer content --}}
+        <!-- drawer content-->
         <div class="drawer-content">
+            {{-- <!--navbar-->
+            @include('layouts.navbar') --}}
 
-            {{-- Navbar --}}
-            <livewire:Component.Navbar />
-
-            {{-- Main Content --}}
+            <!-- content-->
             <main class="bg-base-200 neutral-content p-2">
                 {{$slot}}
             </main>
 
         </div>
 
+        <!-- drawer-->
+        {{-- @include('layouts.drawer') --}}
 
-        {{-- Drawer Menu--}}
-        <livewire:Component.DrawerSide />
+
     </div>
 
 </body>

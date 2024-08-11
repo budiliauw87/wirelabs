@@ -1,4 +1,7 @@
 <div class="container mx-auto p-5 w-full">
+
+
+
     <div class="grid grid-flow-row-dense grid-cols-3 gap-4">
         <div class="col-span-3 lg:col-span-1 card bg-accent text-accent-content shadow ">
             <div class="card-body">
@@ -9,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="card bg-base-100 shadow">
+        <div class="col-span-3 lg:col-span-1 card  bg-base-100 shadow">
             <div class="card-body">
                 <h2 class="card-title">Card title!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -18,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="card bg-green-500 text-primary-content">
+        <div class="col-span-3 lg:col-span-1 card bg-green-500 text-primary-content">
             <div class="card-body">
                 <h2 class="card-title">Card title!</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>

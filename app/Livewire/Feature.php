@@ -8,6 +8,7 @@ class Feature extends Component
 {
     public function render()
     {
+
         return view('livewire.feature');
     }
 }
