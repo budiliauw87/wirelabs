@@ -25,17 +25,17 @@
                                     d="M43 7H32C27.5817 7 24 10.5817 24 15V42C24 38.6863 26.6863 36 30 36H43V7Z"
                                     fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="bevel">
                                 </path>
-                            </svg></span> Post
+                            </svg></span> Component UI
                     </summary>
                     <ul>
                         <li>
-                            <a class="group" href="#">
-                                <span>Link 1</span>
+                            <a class="group" href="component/countdown">
+                                <span>Countdown</span>
                             </a>
                         </li>
                         <li>
                             <a class="group" href="#">
-                                <span>Link 2</span>
+                                <span>Button</span>
                             </a>
                         </li>
 

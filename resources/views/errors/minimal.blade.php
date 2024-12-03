@@ -11,13 +11,24 @@
         </style>
 
         <style>
-            body {
-                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            }
+
         </style>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <main class="grid min-h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="text-center">
+              <p class="text-3xl font-bold tracking-tight text-gray-500 sm:text-9xl">@yield('code')</p>
+              <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">@yield('title')</h1>
+              <p class="mt-6 text-base leading-7 text-gray-600">@yield('message')</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="{{url('/')}}" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
+              </div>
+            </div>
+        </main>
+        {{-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+
             <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
 
                 <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
@@ -30,6 +41,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </body>
 </html>

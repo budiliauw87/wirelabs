@@ -31,6 +31,19 @@ return [
 
     'connections' => [
 
+        //sybase driver
+        'sybase' => [
+            'driver' => 'sybasease',
+            'host' => env('DB_HOST', 'SRV25'),
+            'port' => env('DB_PORT', '5000'),
+            //'dsn' => env('DB_DSN'),  // remove comment in case you define an odbc connection in your env
+            'database' => env('DB_DATABASE', 'FO_PARIGI'),
+            'username' => env('DB_USERNAME', 'dba_reservasi'),
+            'password' => env('DB_PASSWORD', 'dba123456'),
+            'prefix' => '',
+        ],
+
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
@@ -147,7 +160,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
