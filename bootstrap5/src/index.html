@@ -19,7 +19,7 @@
         <a href="/cart.html" class="btn btn-primary btn-sm position-relative">
           <i class="bi bi-bag"></i>
           <span class="position-absolute translate-middle top-0 badge rounded-pill bg-danger">
-            99+
+            0
           </span>
         </a>
 
@@ -44,8 +44,8 @@
         <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
 
       </div>
-      <div class="grid my-3">
-        <div class="g-col-6 g-col-md-4">
+      <div class="grid my-3" id="product-item">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -73,7 +73,7 @@
             </div>
           </div>
         </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -109,45 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="g-col-6 g-col-md-4">
-          <div class="card">
-            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title m-0 p-0">Card title</h5>
-              <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
-                <i class="bi bi-plus"></i> Tambah
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="g-col-6 g-col-md-4">
-          <div class="card">
-            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title m-0 p-0">Card title</h5>
-              <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
-                <i class="bi bi-plus"></i> Tambah
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="g-col-6 g-col-md-4">
-          <div class="card">
-            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title m-0 p-0">Card title</h5>
-              <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
-                <i class="bi bi-plus"></i> Tambah
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="g-col-6 g-col-md-4">
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
             <img src="/img/kue1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -160,6 +122,31 @@
           </div>
         </div>
 
+
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
       </div><!-- end grids-->
       <!--loaders -->
       <div id="loader-item" class="d-flex justify-content-center visually-hidden">
@@ -203,61 +190,99 @@
   </main>
   <script type="text/javascript">
     'use strict'
-
-    let lastKnownScrollPosition = 0;
-    let ticking = false;
-
-    function doSomething(scrollPos) {
-
-      let offsetHeight = (window.pageYOffset + window.innerHeight);
-      let bodyHeight = document.body.offsetHeight;
-
-      if ((bodyHeight + 47) <= offsetHeight) {
-        console.log('enable loader');
-        let loader = document.getElementById('loader-item');
-        loader.classList.remove('visually-hidden');
-        setTimeout(() => {
-          loader.classList.add('visually-hidden');
-          ticking = false;
-        }, 2000);
-      }
-
-
-      /*
+    
+    let isLoading = false;
+    function throttle(callback, time){
+      if(isLoading) return;
+      isLoading = true;
       setTimeout(()=>{
-        let loader = document.getElementById('loader-item');
-        //loader.classList.remove('visually-hidden');
-        ticking = false;
-      },2000);
-      */
-
+        callback();
+        isLoading = false;
+      },time);
     }
-    document.addEventListener("scroll", (event) => {
-      lastKnownScrollPosition = window.scrollY;
 
-      if (!ticking) {
-        ticking = true;
-        window.requestAnimationFrame(() => {
+    async function getData(){
+      console.log('fetch data');
+      const containerItems = document.getElementById('product-item');
+      const elproduct = `<div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>`;
+      containerItems.insertAdjacentHTML('beforeend',elproduct);
+      
+    }
 
-          let offsetHeight = (window.pageYOffset + window.innerHeight);
-          let bodyHeight = document.body.offsetHeight;
+    function showLoading(){
+      let loader = document.getElementById('loader-item');
+      loader.classList.remove('visually-hidden');
+      setTimeout(()=>{
+        loader.classList.add('visually-hidden');
+        setTimeout(()=>{
+          getData();
+        },300);
+       
+      },600);
+    }
 
-          if ((bodyHeight + 47) <= offsetHeight) {
-            console.log('enable loader');
-            let loader = document.getElementById('loader-item');
-            loader.classList.remove('visually-hidden');
-            setTimeout(() => {
-              loader.classList.add('visually-hidden');
-              ticking = false;
-            }, 2000);
-          } else {
-            ticking = false;
-          }
 
-        });
-      }
+    function handleScroll(){
+      throttle(()=>{
+        let offsetHeight = document.body.offsetHeight;
+        let pageHeight = window.innerHeight + window.scrollY;
+       
+        if(offsetHeight <= pageHeight){
+          showLoading();
+        }
+       
+      },1000)
+    }
 
-    });
+    document.addEventListener('scroll',handleScroll);
+
   </script>
 </body>
 

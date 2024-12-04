@@ -36,7 +36,7 @@
           <div class="d-flex justify-content-between 
                   align-items-center mb-3">
 
-            <div class="col-1">
+            <div class="col-2 col-lg-1">
               <img src="/img/kue1.jpg" class="rounded img-fluid ">
             </div>
             <div class="col ms-2">
@@ -50,7 +50,7 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
 
-            <div class="col-1">
+            <div class="col-2 col-lg-1">
               <img src="/img/kue2.jpg" class="rounded img-fluid">
             </div>
             <div class="col ms-2">
@@ -89,7 +89,88 @@
 
     </div>
   </main>
+  <script type="text/javascript">
+    /*
+    let isLoading = false;
+    let loader = document.getElementById('loader-item');
+    
+    function doSomething(scrollPos) {
 
+      let offsetHeight = (window.pageYOffset + window.innerHeight);
+      let bodyHeight = document.body.offsetHeight;
+
+      if ((bodyHeight + 47) <= offsetHeight) {
+        console.log('enable loader');
+        let loader = document.getElementById('loader-item');
+        loader.classList.remove('visually-hidden');
+        setTimeout(() => {
+          loader.classList.add('visually-hidden');
+          ticking = false;
+        }, 2000);
+      }
+      setTimeout(()=>{
+        let loader = document.getElementById('loader-item');
+        //loader.classList.remove('visually-hidden');
+        ticking = false;
+      },2000);
+      
+
+    }
+    document.addEventListener("scroll", async (event) => {
+
+      let offsetHeight = (window.pageYOffset + window.innerHeight);
+      let bodyHeight = document.body.offsetHeight;
+     
+      if(offsetHeight >= bodyHeight){
+        console.log(isLoading);
+        console.log(`offsetHeight2 : ${offsetHeight}`);
+        console.log(`bodyHeight2 : ${bodyHeight}`);
+        if(loader) loader.classList.remove('visually-hidden');
+        await new Promise( resolve  => setTimeout(resolve,2000));
+        if(loader) loader.classList.add('visually-hidden');
+        offsetHeight = (window.pageYOffset + window.innerHeight);
+        bodyHeight = document.body.offsetHeight;
+        console.log(`offsetHeight2 : ${offsetHeight}`);
+        console.log(`bodyHeight2 : ${bodyHeight}`);
+        
+        if(!isLoading){
+         
+          isLoading = true;
+          console.log('data');
+          //showing loading
+          if(loader) loader.classList.remove('visually-hidden');
+          await new Promise( resolve  => setTimeout(resolve,2000));
+          if(loader) loader.classList.add('visually-hidden');
+          isLoading = false;
+        }
+        
+      }
+     
+      
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(() => {
+
+          let offsetHeight = (window.pageYOffset + window.innerHeight);
+          let bodyHeight = document.body.offsetHeight;
+
+          if ((bodyHeight + 47) <= offsetHeight) {
+            console.log('enable loader');
+            let loader = document.getElementById('loader-item');
+            loader.classList.remove('visually-hidden');
+            setTimeout(() => {
+              loader.classList.add('visually-hidden');
+              ticking = false;
+            }, 2000);
+          } else {
+            ticking = false;
+          }
+
+        });
+      }
+
+    });*/
+  </script>
 </body>
 
 </html>
