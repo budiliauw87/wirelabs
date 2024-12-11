@@ -9,41 +9,67 @@
 </head>
 
 <body class="bg-body-secondary">
-  <header>
-    <nav class="navbar fixed-top bg-body-tertiary shadow-sm ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <i class="bi bi-shop d-inline-block align-text-bottom me-1"></i>
-          Bootstrap 5 <span>Vite</span>
-        </a>
-        <a href="/cart.html" class="btn btn-primary btn-sm position-relative">
-          <i class="bi bi-bag"></i>
-          <span class="position-absolute translate-middle top-0 badge rounded-pill bg-danger">
-            0
-          </span>
-        </a>
+  
+  <header class="navbar navbar-expand-lg sticky-top  bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <i class="bi bi-shop d-inline-block align-text-bottom me-1"></i>
+        Bootstrap 5 <span>Vite</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart.html" class="btn btn-primary  position-relative">
+            <i class="bi bi-bag"></i>
+            <span id="nav-cart" class="position-absolute translate-middle top-0 badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+        </li>
+      </ul>
 
-      </div>
-    </nav>
+    </div>
   </header>
-  <main class="mt-5">
+  <main class="">
     <div class="container-fluid py-3 px-3 mx-auto">
-      <div class="overflow-x-auto mt-2">
+      <div class=" overflow-x-auto pb-3">
+        
+        <div class="btn-group overflow-x-auto" role="group" aria-label="Basic radio toggle button group">
+          
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio1">Radio 1</label>
+  
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio2">Radio 2</label>
+  
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
+          
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary rounded-pill mx-1 text-truncate" for="btnradio3">Radio 3</label>
 
+        </div>
       </div>
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-
-      </div>
+ 
       <div class="grid my-3" id="product-item">
         <div class="g-col-6 g-col-md-4 g-col-xl-3">
           <div class="card">
@@ -52,7 +78,7 @@
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
 
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
 
@@ -66,7 +92,7 @@
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
 
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
 
@@ -79,7 +105,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -91,7 +117,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -103,7 +129,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -115,7 +141,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -129,7 +155,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -141,56 +167,91 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm btn-add-cart">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm btn-add-cart">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm btn-add-cart">
+                <i class="bi bi-plus"></i> Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="g-col-6 g-col-md-4 g-col-xl-3">
+          <div class="card">
+            <img src="/img/kue1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title m-0 p-0">Card title</h5>
+              <p class="card-text">IDR 5,000</p>
+              <button class="btn btn-primary btn-sm btn-add-cart">
+                <i class="bi bi-plus"></i> Contoh
               </button>
             </div>
           </div>
         </div>
       </div><!-- end grids-->
       <!--loaders -->
-      <div id="loader-item" class="d-flex justify-content-center visually-hidden">
+      <div id="loader-item" class="d-flex justify-content-center 
+          visually-hidden my-3">
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
 
-      <div class="row">
-        <!--vertical card -->
-        <!-- <div class="card">
-          <img src="/img/kue2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title m-0 p-0">Card title</h5>
-            <p class="card-text ">IDR 5,000</p>
-
-            <div class="input-group">
-             
-              <button class="input-group-text btn btn-outline-secondary btn-sm">
-                <i class="bi bi-plus"></i>
-              </button>
-              <input type="text" class="form-control form-control-sm" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
-              <button class="btn btn-primary btn-sm ">
-                <i class="bi bi-dash"></i>
-              </button>
-            </div>
-            <div class="d-flex flex-row mt-2">
-              <input type="number" class="form-control form-control-sm" placeholder="Qty" aria-label="Qty" value="0">
-              <button class="btn btn-primary btn-sm ms-2">
-                <i class="bi bi-dash"></i>
-              </button>
-              <button class="btn btn-primary btn-sm ms-2">
-                <i class="bi bi-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      
 
     </div>
   </main>
   <script type="text/javascript">
+    /*
     'use strict'
+
+    const carts = [];
+    const btnCart = document.getElementsByClassName('btn-add-cart');
+    let badgeCart = document.getElementById('nav-cart')
+    badgeCart.textContent = 0;
     
+    for( let index = 0; index < btnCart.length; index++ ){
+      btnCart[index].addEventListener('click',(event)=>{
+        carts.push('tester');
+        badgeCart.textContent = carts.length;
+      });
+    }  
+
     let isLoading = false;
     function throttle(callback, time){
       if(isLoading) return;
@@ -210,7 +271,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -222,7 +283,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -234,7 +295,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -246,7 +307,7 @@
             <div class="card-body">
               <h5 class="card-title m-0 p-0">Card title</h5>
               <p class="card-text">IDR 5,000</p>
-              <button class="btn btn-primary btn-sm">
+              <button class="btn btn-primary btn-sm btn-add-cart">
                 <i class="bi bi-plus"></i> Tambah
               </button>
             </div>
@@ -282,6 +343,11 @@
     }
 
     document.addEventListener('scroll',handleScroll);
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+      const header = document.getElementById('navbar-header');
+      //console.log(header.offsetHeight)
+    });*/
 
   </script>
 </body>

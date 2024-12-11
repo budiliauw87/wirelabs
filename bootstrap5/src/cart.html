@@ -9,24 +9,39 @@
 </head>
 
 <body class="bg-body-secondary">
-  <header>
-    <nav class="navbar fixed-top bg-body-tertiary shadow-sm ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <i class="bi bi-shop d-inline-block align-text-bottom me-1"></i>
-          Bootstrap 5 <span>Vite</span>
-        </a>
-        <a href="/cart.html" class="btn btn-primary btn-sm position-relative">
-          <i class="bi bi-bag"></i>
-          <span class="position-absolute translate-middle top-0 badge rounded-pill bg-danger">
-            99+
-          </span>
-        </a>
+  
+  <header class="navbar navbar-expand-lg sticky-top  bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <i class="bi bi-shop d-inline-block align-text-bottom me-1"></i>
+        Bootstrap 5 <span>Vite</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart.html" class="btn btn-primary  position-relative">
+            <i class="bi bi-bag"></i>
+            <span id="nav-cart" class="position-absolute translate-middle top-0 badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+        </li>
+      </ul>
 
-      </div>
-    </nav>
+    </div>
   </header>
-  <main class="mt-5">
+  <main>
     <div class="container-fluid py-3 px-3 mx-auto">
 
       <h2 class="mt-2">Cart Orders</h2>
